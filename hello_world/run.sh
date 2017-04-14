@@ -6,15 +6,14 @@
 
 
 ## Put the output from jobs into the below directory
-#PBS -o /usr/lusers/xsqin/HPCC_training_session/hello_world
+#PBS -o /usr/lusers/xsqin/xsqin_hpcc/hpcc_training_04142017/hello_world
 
 ## Put both the stderr and stdout into a single file
 #PBS -j oe
 
 ## Specify the working directory for this job
-#PBS -d /usr/lusers/xsqin/HPCC_training_session/hello_world
+#PBS -d /usr/lusers/xsqin/xsqin_hpcc/hpcc_training_04142017/hello_world
 
-#PBS -W group_list=hyak-motley
-##PBS -W group_list=hyak-stf
+#PBS -W group_list=hyak-stf
    
 ./test
